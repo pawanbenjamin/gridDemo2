@@ -65,10 +65,22 @@ figure > div {
     grid-template-rows: auto;
     gap: 4%;
   }
+  figure {
+    grid-column: span 2;
+  }
+  .span-3,
+  .span-1-lg {
+    grid-column: span 4;
+  }
 }
 
 /* Desktop Query*/
 @media (min-width: 800px) {
+  figure,
+  .span-1-lg {
+    grid-column: span 1;
+  }
+
   .span-2 {
     grid-column: span 2;
   }
